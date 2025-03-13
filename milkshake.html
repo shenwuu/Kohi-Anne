@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="kohi_anne.css" rel="stylesheet">
+<link href="milkshake.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true});
+   $('body').on('click','[data-ecommerce-platform="paypal"]', function(e)
+   {
+      e.preventDefault();
+      var url = "https://www.paypal.com/cgi-bin/webscr?add=1&cmd=";
+      url += $(this).attr('data-cmd');
+      url += "&business=";
+      url += encodeURIComponent($(this).attr('data-business'));
+      url += "&item_name=";
+      url += encodeURIComponent($(this).attr('data-item-name'));
+      url += "&item_number=";
+      url += encodeURIComponent($(this).attr('data-item-number'));
+      url += "&amount=";
+      url += encodeURIComponent($(this).attr('data-amount'));
+      url += "&currency_code=";
+      url += encodeURIComponent($(this).attr('data-currency-code'));
+      if ($(this).attr('data-quantity'))
+      {
+         url += "&quantity=";
+         url += encodeURIComponent($(this).attr('data-quantity'));
+      }
+      url += "&shipping=";
+      url += encodeURIComponent($(this).attr('data-shipping'));
+      url += "&shipping2=";
+      url += encodeURIComponent($(this).attr('data-shipping2'));
+      url += "&handling=";
+      url += encodeURIComponent($(this).attr('data-handling'));
+      url += "&no_shipping=";
+      url += encodeURIComponent($(this).attr('data-no_shipping'));
+      url += "&return=";
+      url += encodeURIComponent($(this).attr('data-success-url'));
+      url += "&cancel_return=";
+      url += encodeURIComponent($(this).attr('data-cancel-url'));
+      window.open(url, '_click');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="col-1">
+<div id="wb_PanelMenu1" style="display:inline-block;width:48px;height:51px;z-index:0;">
+<a href="#PanelMenu1_markup" id="PanelMenu1">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+<li role="menuitem"><a href="./coffee.html" class="nav-link">Coffee</a></li>
+<li role="menuitem"><a href="./milktea.html" class="nav-link">Milktea</a></li>
+<li role="menuitem"><a href="./milkshake.html" class="nav-link">Milk Shake</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:1;">
+<img src="images/logo.jpg" id="Image1" alt="" width="50" height="50">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text1">
+<span style="color:#FFE4B5;font-family:Georgia;font-size:27px;letter-spacing:3.07px;"><strong>KOHI ANNE</strong></span>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_CssMenu1" style="display:block;width:100%;z-index:3;">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./index.html" target="_self"><i class="fa fa-home"></i>Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./shop.html" target="_self"><i class="fa fa-coffee"></i>Shop</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./index.html#contactGrid" target="_self"><i class="fa fa-envelope"></i>Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_features1Heading" style="display:block;width:100%;z-index:10;">
+<h1 id="features1Heading">BEST-SELLING MILKSHAKES</h1>
+</div>
+<div id="wb_features1CardContainer">
+<div id="features1CardContainer">
+<div id="wb_features1Card1" style="display:flex;z-index:4;" class="card">
+<div id="features1Card1-card-body">
+<img id="features1Card1-card-item0" src="images/strawberry.jpg" width="600" height="750" alt="" title="">
+<div id="features1Card1-card-item1"><h1>Strawberry</h1></div>
+<div id="features1Card1-card-item2" data-ecommerce-platform="paypal" data-business="" data-item-name="WYSIWYG Web Builder" data-item-number="WWB18" data-amount="59.95" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart" data-no_shipping="0" data-weight="1"><a href="https://www.wysiwygwebbuilder.com">BUY</a></div>
+</div>
+</div>
+<div id="wb_features1Card2" style="display:flex;z-index:5;" class="card">
+<div id="features1Card2-card-body">
+<img id="features1Card2-card-item0" src="images/vanilla.jpg" width="560" height="700" alt="" title="">
+<div id="features1Card2-card-item1"><h1>Vanilla</h1></div>
+<div id="features1Card2-card-item2" data-ecommerce-platform="paypal" data-business="" data-item-name="WYSIWYG Web Builder" data-item-number="WWB18" data-amount="59.95" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart" data-no_shipping="0" data-weight="1"><a href="https://www.wysiwygwebbuilder.com">BUY</a></div>
+</div>
+</div>
+<div id="wb_features1Card3" style="display:flex;z-index:6;" class="card">
+<div id="features1Card3-card-body">
+<img id="features1Card3-card-item0" src="images/chocolate.jpg" width="736" height="736" alt="" title="">
+<div id="features1Card3-card-item1"><h1>Chocolate</h1></div>
+<div id="features1Card3-card-item2" data-ecommerce-platform="paypal" data-business="" data-item-name="WYSIWYG Web Builder" data-item-number="WWB18" data-amount="59.95" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart" data-no_shipping="0" data-weight="1"><a href="https://www.wysiwygwebbuilder.com">BUY</a></div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_CardContainer1">
+<div id="CardContainer1">
+<div id="wb_Card1" style="display:flex;z-index:7;" class="card">
+<div id="Card1-card-body">
+<img id="Card1-card-item0" src="images/cookies.jpg" width="736" height="977" alt="" title="">
+<div id="Card1-card-item1"><h1>Cookies & Cream</h1></div>
+<div id="Card1-card-item2" data-ecommerce-platform="paypal" data-business="" data-item-name="WYSIWYG Web Builder" data-item-number="WWB18" data-amount="59.95" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart" data-no_shipping="0" data-weight="1"><a href="https://www.wysiwygwebbuilder.com">BUY</a></div>
+</div>
+</div>
+<div id="wb_Card2" style="display:flex;z-index:8;" class="card">
+<div id="Card2-card-body">
+<img id="Card2-card-item0" src="images/milkshake overload.jpg" width="736" height="1288" alt="" title="">
+<div id="Card2-card-item1"><h1>Milkshake Overload</h1></div>
+<div id="Card2-card-item2" data-ecommerce-platform="paypal" data-business="" data-item-name="WYSIWYG Web Builder" data-item-number="WWB18" data-amount="59.95" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart" data-no_shipping="0" data-weight="1"><a href="https://www.wysiwygwebbuilder.com">BUY</a></div>
+</div>
+</div>
+<div id="wb_Card3" style="display:flex;z-index:9;" class="card">
+<div id="Card3-card-body">
+<img id="Card3-card-item0" src="images/milkshake.jpg" width="736" height="977" alt="" title="">
+<div id="Card3-card-item1"><h1>Java Chips</h1></div>
+<div id="Card3-card-item2" data-ecommerce-platform="paypal" data-business="" data-item-name="WYSIWYG Web Builder" data-item-number="WWB18" data-amount="59.95" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart" data-no_shipping="0" data-weight="1"><a href="https://www.wysiwygwebbuilder.com">BUY</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<picture id="wb_Picture1" style="display:block;width: 100%;height:auto;z-index:13">
+<img src="images/ads.jpg" id="Picture1" alt="" width="212" height="290">
+</picture>
+<picture id="wb_Picture2" style="display:block;width: 100%;height:auto;z-index:14">
+<img src="images/ads2.jpg" id="Picture2" alt="" width="212" height="265">
+</picture>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footerLayoutGrid">
+<div id="footerLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerLogo" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/logo.jpg" id="footerLogo" alt="" width="970" height="970">
+</div>
+<div id="wb_footerText">
+<p>© Copyright Kohi Anne&nbsp; -&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb20.png" alt="WYSIWYG Web Builder" style="position:absolute;left:21px;top:1160px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+</body>
+</html>
